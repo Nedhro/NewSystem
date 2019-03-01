@@ -20,7 +20,7 @@ public class TaskService {
 		taskRepository.save(task);
 	}
 	
-	public List<Task>  findUserTask(User user){
+	public List<Task> findUserTask(User user){
 		
 		return taskRepository.findByUser(user);
 	}

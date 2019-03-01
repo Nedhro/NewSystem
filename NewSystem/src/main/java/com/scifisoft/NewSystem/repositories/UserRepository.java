@@ -8,6 +8,6 @@ import com.scifisoft.NewSystem.entities.User;
 
 public interface UserRepository  extends JpaRepository<User, String> {
 
-	List<User> findByNameLike(String name); 
+	List<User> findByNameLike(String name);
 
 }
