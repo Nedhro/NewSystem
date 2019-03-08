@@ -30,7 +30,7 @@
 						<tr th:each="user:${users}">
 							<td th:text="${user.name}"></td>
 							<td th:text="${user.email}"></td>
-							<td><a href="@{/addTask(email=${user.email})}"
+							<td><a th:href="@{/addTask(email=${user.email})}"
 								class="btn btn-success">Add Task</a></td>
 						</tr>
 					</tbody>

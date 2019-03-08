@@ -11,6 +11,10 @@ public class IndexController {
 
 		return "index";
 	}
-
+	
+@GetMapping("/login")
+public String showLogin() {
+	return "views/loginForm";
+}
 	
 }
