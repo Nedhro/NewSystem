@@ -20,9 +20,8 @@ public class NewSystemApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		
 		  {
-  		  User newAdmin = new User("admin@mail.com", "Admin", "123456");
+  		  User newAdmin = new User("admin@mail.com", "ADMIN", "123456");
   		  userService.createAdmin(newAdmin);
   	  }
 	}

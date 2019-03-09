@@ -38,8 +38,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		
 		http.authorizeRequests().antMatchers("/register", "/", "/about","/users", "/login", "/css/**", "/webjars/**").permitAll()
-				.antMatchers("/profile").hasAnyRole("User,Admin")
-				.antMatchers("/users","/addTask").hasRole("Admin")
+				.antMatchers("/profile").hasAnyRole("USER,ADMIN")
+				.antMatchers("/users","/addTask").hasRole("ADMIN")
 				.and().formLogin().loginPage("/login").permitAll()
 				.defaultSuccessUrl("/profilePage").and().logout().logoutSuccessUrl("/login");
 	}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<title>Oops! Error</title>
+</head>
+<body>
+
+	<div layout:fragment="content" class="container mySpace">
+		<div class="jumbotron">
+			<div>
+			<p>
+				Oops! You have faced an error.Authentication is required...<br>|<span th:text="${message}">Message</span>| <span
+					th:text="${status}" class="text text-danger">Status</span>
+			</p>
+			</div>
+			<div>
+				<b>Please contact the ADMIN of SciFiSoft if you are seeing this error so far...</b>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
